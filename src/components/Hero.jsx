@@ -11,6 +11,8 @@ const Hero = () => {
           }
           fill
           className="absolute h-full object-cover rounded shadow"
+          alt="Post"
+          priority
         />
       </div>
 

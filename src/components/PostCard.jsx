@@ -9,6 +9,8 @@ const PostCard = () => {
         width={500}
         height={500}
         className="rounded shadow w-full md:w-[50%] h-[40vh] md:h-[40vh] object-cover"
+        alt="Post"
+        priority
       />
       <div className="space-y-4 mt-6 md:mt-0">
         <p>
