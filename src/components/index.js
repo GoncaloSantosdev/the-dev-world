@@ -6,4 +6,5 @@ export { default as Title } from "./Title";
 export { default as RecentPosts } from "./RecentPosts";
 export { default as PostCard } from "./PostCard";
 export { default as Sidebar } from "./Sidebar";
+export { default as Pagination } from "./Pagination";
 export { default as Footer } from "./Footer";

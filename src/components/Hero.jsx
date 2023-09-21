@@ -18,7 +18,7 @@ const Hero = () => {
         <h2 className="text-xl font-semibold md:text-2xl">
           Lorem ipsum dolor sit amet consectetur.
         </h2>
-        <p className="mt-4 md:text-lg">
+        <p className="mt-4">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
           repellat atque doloribus eligendi? Consectetur corporis aut quos
           libero repellat quidem.

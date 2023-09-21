@@ -1,5 +1,5 @@
 // Components
-import { PostCard, Title } from ".";
+import { Pagination, PostCard, Title } from ".";
 
 const RecentPosts = () => {
   return (
@@ -8,6 +8,7 @@ const RecentPosts = () => {
       <PostCard />
       <PostCard />
       <PostCard />
+      <Pagination />
     </section>
   );
 };

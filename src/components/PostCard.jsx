@@ -15,17 +15,17 @@ const PostCard = () => {
           11.05.2023 -{" "}
           <span className="text-blue-700 font-semibold">Category</span>
         </p>
-        <h2 className="text-lg font-semibold">
+        <h2 className="font-semibold text-lg">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Consequuntur, libero!
         </h2>
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-sm">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
           laborum sint aspernatur.
         </p>
 
         <div className="mt-4">
-          <Link href={"/blog/:id"} className="btn-primary">
+          <Link href={"/blog/:id"} className="underline">
             Read More
           </Link>
         </div>
