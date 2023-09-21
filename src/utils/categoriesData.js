@@ -5,13 +5,13 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 
 export const categoriesData = [
-  { title: "Frontend", path: "/frontend", icon: FaReact },
-  { title: "Backend", path: "/backend", icon: BiLogoNodejs },
-  { title: "Full-Stack", path: "/full-stack", icon: TbBrandNextjs },
+  { title: "Frontend", path: "/blog", icon: FaReact },
+  { title: "Backend", path: "/blog", icon: BiLogoNodejs },
+  { title: "Full-Stack", path: "/blog", icon: TbBrandNextjs },
   {
     title: "Web Design",
-    path: "/web-design",
+    path: "/blog",
     icon: MdOutlineDesignServices,
   },
-  { title: "Web Security", path: "/web-security", icon: AiOutlineSecurityScan },
+  { title: "Web Security", path: "/blog", icon: AiOutlineSecurityScan },
 ];

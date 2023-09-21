@@ -27,7 +27,7 @@ const PostCard = () => {
         </p>
 
         <div className="mt-4">
-          <Link href={"/blog/:id"} className="underline">
+          <Link href={"/:slug"} className="underline">
             Read More
           </Link>
         </div>
