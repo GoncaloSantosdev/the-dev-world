@@ -1,12 +1,12 @@
+import Link from "next/link";
 // Components
 import { categoriesData } from "@/utils/categoriesData";
 import { Title } from ".";
-import Link from "next/link";
 
 const Categories = () => {
   return (
     <section className="mt-12">
-      <Title>Popular Categories</Title>
+      <Title title={"Top Categories"} />
 
       <div className="flex flex-wrap gap-4 md:justify-between mt-8">
         {categoriesData.map((category, index) => (
