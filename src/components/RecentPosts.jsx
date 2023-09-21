@@ -3,9 +3,8 @@ import { PostCard, Title } from ".";
 
 const RecentPosts = () => {
   return (
-    <section className="flex-1">
+    <section className="w-full lg:w-[70%]">
       <Title title={"Recent Posts"} />
-
       <PostCard />
       <PostCard />
       <PostCard />

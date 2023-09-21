@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         className="
       "
       >
-        <div className="max-w-[1200px] mx-auto px-4">
+        <div className="container mx-auto px-4">
           <Header />
           {children}
           <Footer />

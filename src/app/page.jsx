@@ -1,17 +1,15 @@
 // Components
-import { Categories, Hero, RecentPosts } from "@/components";
+import { Categories, Hero, RecentPosts, Sidebar } from "@/components";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
       <Categories />
-      <div className="flex flex-col lg:flex-row items-center mt-12">
+      <div className="flex flex-col lg:flex-row mt-12 gap-6">
         <RecentPosts />
-        <div>
-          <div>Popular Posts</div>
-          <div>Categories</div>
-          <div>Editor's Pick</div>
+        <div className="w-full lg:w-[30%]">
+          <Sidebar />
         </div>
       </div>
     </div>
