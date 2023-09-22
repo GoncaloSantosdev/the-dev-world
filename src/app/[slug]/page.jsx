@@ -1,4 +1,4 @@
-import { RecentPosts, Sidebar, Title } from "@/components";
+import { Sidebar, Title } from "@/components";
 import Image from "next/image";
 
 const SinglePostPage = () => {

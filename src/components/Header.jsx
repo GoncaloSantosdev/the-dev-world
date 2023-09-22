@@ -1,17 +1,18 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-// Components
-import { ThemeToggle } from ".";
+// Next Auth
+import { signOut, useSession } from "next-auth/react";
 // Data
 import { navData } from "@/utils/navData";
 // React icons
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { CiCirclePlus } from "react-icons/ci";
 
 const Header = () => {
+  const { status } = useSession();
   const [menu, setMenu] = useState(false);
-  const authStatus = false;
 
   const handleMenu = () => {
     setMenu((prev) => !prev);
@@ -36,8 +37,15 @@ const Header = () => {
       </nav>
 
       <div className="hidden md:block">
-        {authStatus ? (
-          <button className="border rounded px-4 py-2">Logout</button>
+        {status === "authenticated" ? (
+          <div className="flex items-center gap-4">
+            <Link href={"/create"}>
+              <CiCirclePlus size={30} />
+            </Link>
+            <button className="btn-primary" onClick={() => signOut()}>
+              Logout
+            </button>
+          </div>
         ) : (
           <Link className="btn-primary" href={"/login"}>
             Login
@@ -56,8 +64,15 @@ const Header = () => {
             ))}
 
             <div>
-              {authStatus ? (
-                <button className="border rounded px-4 py-2">Logout</button>
+              {status === "authenticated" ? (
+                <div className="flex flex-col gap-4">
+                  <Link href={"/create"}>
+                    <CiCirclePlus size={30} />
+                  </Link>
+                  <button className="btn-primary" onClick={() => signOut()}>
+                    Logout
+                  </button>
+                </div>
               ) : (
                 <Link className="btn-primary" href={"/login"}>
                   Login
