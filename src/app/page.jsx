@@ -1,7 +1,9 @@
 // Components
 import { Categories, Hero, RecentPosts, Sidebar } from "@/components";
 
-const HomePage = () => {
+const HomePage = ({ searchParams }) => {
+  const page = parseInt(searchParams.page) || 1;
+
   return (
     <div>
       <Hero />
