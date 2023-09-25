@@ -55,11 +55,11 @@ const Comments = ({ postSlug }) => {
         </Link>
       )}
 
-      <div className="mt-12">
+      <div className="mt-12 space-y-12">
         {isLoading
           ? "loading"
           : data?.map((item) => (
-              <>
+              <div>
                 <div className="flex items-center gap-4">
                   <Image
                     src={item.user.image}
@@ -77,7 +77,7 @@ const Comments = ({ postSlug }) => {
                   <span className="font-semibold">Comment: </span>
                   {item.desc}
                 </p>
-              </>
+              </div>
             ))}
       </div>
     </div>

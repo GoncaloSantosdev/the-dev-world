@@ -10,12 +10,7 @@ const BlogPage = ({ searchParams }) => {
         <h2 className="text-xl capitalize">{cat}</h2>
       </div>
 
-      <div className="flex flex-col lg:flex-row mt-8 gap-6">
-        <RecentPosts page={page} cat={cat} />
-        <div className="w-full lg:w-[30%]">
-          <Sidebar />
-        </div>
-      </div>
+      <RecentPosts page={page} cat={cat} />
     </section>
   );
 };

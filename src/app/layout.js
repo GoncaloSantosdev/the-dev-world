@@ -14,10 +14,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true}>
         <AuthProvider>
-          <div className="container mx-auto px-4">
+          <div className="max-w-[1200px] mx-auto px-4">
             <Header />
             {children}
             <Footer />

@@ -9,12 +9,7 @@ const HomePage = ({ searchParams }) => {
     <div>
       <Hero />
       <Categories />
-      <div className="flex flex-col lg:flex-row mt-12 gap-6">
-        <RecentPosts page={page} cat={cat} />
-        <div className="w-full lg:w-[30%]">
-          <Sidebar />
-        </div>
-      </div>
+      <RecentPosts page={page} cat={cat} />
     </div>
   );
 };

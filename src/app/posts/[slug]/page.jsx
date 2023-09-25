@@ -37,9 +37,7 @@ const SinglePostPage = async ({ params }) => {
         </div>
         <div className="relative h-[50vh] w-full md:w-1/2">
           <Image
-            src={
-              "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3006&q=80"
-            }
+            src={data?.img}
             fill
             className="absolute h-full object-cover rounded shadow"
             alt="Post"
@@ -49,7 +47,7 @@ const SinglePostPage = async ({ params }) => {
       </div>
 
       <div className="flex flex-col lg:flex-row mt-24 gap-6 flex-1">
-        <div className="lg:w-[70%]">
+        <div>
           <div
             className="space-y-6"
             dangerouslySetInnerHTML={{ __html: data?.desc }}
@@ -61,9 +59,6 @@ const SinglePostPage = async ({ params }) => {
               <Comments postSlug={slug} />
             </div>
           </div>
-        </div>
-        <div className="w-full lg:w-[30%]">
-          <Sidebar />
         </div>
       </div>
     </section>

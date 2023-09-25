@@ -1,11 +1,11 @@
 export { default as Header } from "./Header";
 export { default as ThemeToggle } from "./ThemeToggle";
 export { default as Hero } from "./Hero";
+export { default as ImageSlider } from "./ImageSlider";
 export { default as Categories } from "./Categories";
 export { default as Title } from "./Title";
 export { default as RecentPosts } from "./RecentPosts";
 export { default as PostCard } from "./PostCard";
-export { default as Sidebar } from "./Sidebar";
 export { default as Pagination } from "./Pagination";
 export { default as Comments } from "./Comments";
 export { default as Footer } from "./Footer";
