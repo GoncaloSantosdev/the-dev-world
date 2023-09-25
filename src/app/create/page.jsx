@@ -15,11 +15,13 @@ import { CiCirclePlus } from "react-icons/ci";
 import { BsImage, BsPlayBtn } from "react-icons/bs";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 // React Quill
-import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
+import dynamic from "next/dynamic";
 
 const CreatePostPage = () => {
   const { status } = useSession();
+  const ReactQuill = dynamic(() => import("react-quill", { ssr: false }));
+
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
