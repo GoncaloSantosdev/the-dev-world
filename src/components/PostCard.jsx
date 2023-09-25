@@ -17,17 +17,14 @@ const PostCard = ({ item, key }) => {
       />
       <div className="space-y-4 mt-6 md:mt-0">
         <p>
-          11.05.2023 -{" "}
-          <span className="text-blue-700 font-semibold">Category</span>
+          {item.createdAt.substring(0, 10)}-{" "}
+          <span className="text-blue-700 font-semibold">{item.catSlug}</span>
         </p>
         <h2 className="font-semibold text-lg">{item.title}</h2>
-        <p className="text-gray-500 text-sm">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-          laborum sint aspernatur.
-        </p>
+        <p className="text-gray-500 text-sm">{item.desc}</p>
 
         <div className="mt-4">
-          <Link href={"/posts/slug"} className="underline">
+          <Link href={`/posts/${item.slug}`} className="underline">
             Read More
           </Link>
         </div>

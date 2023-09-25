@@ -25,7 +25,7 @@ const Categories = async () => {
         {data?.map((category) => (
           <Link
             key={category.id}
-            href="/blog?cat=style"
+            href={`/blog?cat=${category.slug}`}
             className="flex items-center gap-2 rounded border px-6 py-3 hover:bg-blue-700 hover:text-white transition-all"
           >
             <h4>{category.title}</h4>
