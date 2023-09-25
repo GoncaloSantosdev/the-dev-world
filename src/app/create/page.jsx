@@ -1,4 +1,6 @@
 "use client";
+
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -16,11 +18,10 @@ import { BsImage, BsPlayBtn } from "react-icons/bs";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 // React Quill
 import "react-quill/dist/quill.bubble.css";
-import dynamic from "next/dynamic";
 
 const CreatePostPage = () => {
   const { status } = useSession();
-  const ReactQuill = dynamic(() => import("react-quill", { ssr: false }));
+  const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -156,7 +157,7 @@ const CreatePostPage = () => {
         value={value}
         onChange={setValue}
         placeholder="Write something about code..."
-        className="mt-6 placeholder:text-base"
+        className="mt-6 placeholder:text-base border"
       />
 
       <button className="btn-primary mt-12" onClick={handleSubmit}>
